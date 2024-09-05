@@ -10,8 +10,11 @@ def append_file(file_name, append_content):
 
 def read_file(file_name):
     with open(f"{file_name}.txt", mode='r', encoding='utf-8') as read_file:
-        return read_file.read()
+        for line in read_file:
+            print(line)
     
-    # for line in read_file
-    #     print(line)
+
     
+write_file("log_file", 'hello world. Am written by python.')    
+append_file("log_file", " Whoa! Python appended me!")
+read_file("log_file")
