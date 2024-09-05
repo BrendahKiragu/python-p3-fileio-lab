@@ -12,3 +12,6 @@ def read_file(file_name):
     with open(f"{file_name}.txt", mode='r', encoding='utf-8') as read_file:
         return read_file.read()
     
+    # for line in read_file
+    #     print(line)
+    
